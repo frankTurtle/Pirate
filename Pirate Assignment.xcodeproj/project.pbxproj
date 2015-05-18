@@ -14,6 +14,7 @@
 		10B76A791B0A80F10034DEBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B76A781B0A80F10034DEBD /* Images.xcassets */; };
 		10B76A7C1B0A80F10034DEBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B76A7A1B0A80F10034DEBD /* LaunchScreen.xib */; };
 		10B76A881B0A80F10034DEBD /* Pirate_AssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B76A871B0A80F10034DEBD /* Pirate_AssignmentTests.m */; };
+		10B76A931B0A84D80034DEBD /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B76A921B0A84D80034DEBD /* Tile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		10B76A811B0A80F10034DEBD /* Pirate AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pirate AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B76A861B0A80F10034DEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10B76A871B0A80F10034DEBD /* Pirate_AssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pirate_AssignmentTests.m; sourceTree = "<group>"; };
+		10B76A911B0A84D80034DEBD /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		10B76A921B0A84D80034DEBD /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				10B76A721B0A80F10034DEBD /* ViewController.h */,
 				10B76A731B0A80F10034DEBD /* ViewController.m */,
 				10B76A751B0A80F10034DEBD /* Main.storyboard */,
+				10B76A911B0A84D80034DEBD /* Tile.h */,
+				10B76A921B0A84D80034DEBD /* Tile.m */,
 				10B76A781B0A80F10034DEBD /* Images.xcassets */,
 				10B76A7A1B0A80F10034DEBD /* LaunchScreen.xib */,
 				10B76A6B1B0A80F10034DEBD /* Supporting Files */,
@@ -222,6 +227,7 @@
 				10B76A741B0A80F10034DEBD /* ViewController.m in Sources */,
 				10B76A711B0A80F10034DEBD /* AppDelegate.m in Sources */,
 				10B76A6E1B0A80F10034DEBD /* main.m in Sources */,
+				10B76A931B0A84D80034DEBD /* Tile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
