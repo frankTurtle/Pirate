@@ -25,9 +25,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact" misplaced="YES">
-                                            <rect key="frame" x="75" y="-109" width="450" height="299"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levittown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbV-r1-WGX">
                                         <rect key="frame" x="-17" y="0.0" width="634" height="179"/>
@@ -43,15 +40,9 @@
                                     <constraint firstItem="BbV-r1-WGX" firstAttribute="top" secondItem="XrJ-Yj-fkR" secondAttribute="top" id="qhM-UL-PjL"/>
                                     <constraint firstAttribute="bottom" secondItem="09l-gB-gfn" secondAttribute="bottom" constant="10" id="zDD-5b-VDe"/>
                                 </constraints>
-                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="200" width="600" height="200"/>
-                                </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-x1-x9L">
                                 <rect key="frame" x="150" y="20" width="300" height="197"/>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="20" width="300" height="160"/>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.4365795690929366" green="0.69551219792953289" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -65,6 +56,10 @@
                             <constraint firstItem="XrJ-Yj-fkR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Thg-ES-qd0"/>
                             <constraint firstAttribute="trailing" secondItem="XrJ-Yj-fkR" secondAttribute="trailing" id="Uf7-xl-8Mc"/>
                             <constraint firstItem="xJ0-x1-x9L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="cRl-h9-alZ"/>
+                            <constraint firstItem="XrJ-Yj-fkR" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.5" id="h6z-h7-1Y6"/>
+                            <constraint firstItem="XrJ-Yj-fkR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="180" id="mIc-7U-mh7">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="xJ0-x1-x9L" secondAttribute="centerX" id="w27-rn-e5y"/>
                         </constraints>
                         <variation key="default">
@@ -72,6 +67,8 @@
                                 <exclude reference="3DI-gn-xK0"/>
                                 <exclude reference="Pqa-zP-pxO"/>
                                 <exclude reference="cRl-h9-alZ"/>
+                                <exclude reference="h6z-h7-1Y6"/>
+                                <exclude reference="mIc-7U-mh7"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -83,6 +80,9 @@
                                 <include reference="cRl-h9-alZ"/>
                                 <exclude reference="w27-rn-e5y"/>
                                 <exclude reference="7LQ-6q-OBt"/>
+                                <exclude reference="Thg-ES-qd0"/>
+                                <include reference="h6z-h7-1Y6"/>
+                                <include reference="mIc-7U-mh7"/>
                             </mask>
                         </variation>
                     </view>
