@@ -25,6 +25,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="75" y="-109" width="450" height="299"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levittown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbV-r1-WGX">
                                         <rect key="frame" x="-17" y="0.0" width="634" height="179"/>
@@ -40,21 +43,48 @@
                                     <constraint firstItem="BbV-r1-WGX" firstAttribute="top" secondItem="XrJ-Yj-fkR" secondAttribute="top" id="qhM-UL-PjL"/>
                                     <constraint firstAttribute="bottom" secondItem="09l-gB-gfn" secondAttribute="bottom" constant="10" id="zDD-5b-VDe"/>
                                 </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-x1-x9L">
                                 <rect key="frame" x="150" y="20" width="300" height="197"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="150" y="20" width="300" height="160"/>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.4365795690929366" green="0.69551219792953289" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xJ0-x1-x9L" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="07N-Wr-0OT"/>
+                            <constraint firstItem="xJ0-x1-x9L" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.45" id="3DI-gn-xK0"/>
                             <constraint firstItem="XrJ-Yj-fkR" firstAttribute="top" secondItem="xJ0-x1-x9L" secondAttribute="bottom" constant="20" id="7LQ-6q-OBt"/>
                             <constraint firstItem="xJ0-x1-x9L" firstAttribute="height" relation="lessThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.4" id="9de-QS-lmJ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XrJ-Yj-fkR" secondAttribute="bottom" id="Dal-KE-0av"/>
+                            <constraint firstAttribute="centerY" secondItem="xJ0-x1-x9L" secondAttribute="centerY" id="Pqa-zP-pxO"/>
                             <constraint firstItem="XrJ-Yj-fkR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Thg-ES-qd0"/>
                             <constraint firstAttribute="trailing" secondItem="XrJ-Yj-fkR" secondAttribute="trailing" id="Uf7-xl-8Mc"/>
+                            <constraint firstItem="xJ0-x1-x9L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="cRl-h9-alZ"/>
                             <constraint firstAttribute="centerX" secondItem="xJ0-x1-x9L" secondAttribute="centerX" id="w27-rn-e5y"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3DI-gn-xK0"/>
+                                <exclude reference="Pqa-zP-pxO"/>
+                                <exclude reference="cRl-h9-alZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="07N-Wr-0OT"/>
+                                <include reference="3DI-gn-xK0"/>
+                                <exclude reference="9de-QS-lmJ"/>
+                                <include reference="Pqa-zP-pxO"/>
+                                <include reference="cRl-h9-alZ"/>
+                                <exclude reference="w27-rn-e5y"/>
+                                <exclude reference="7LQ-6q-OBt"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
