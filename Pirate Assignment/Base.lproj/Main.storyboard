@@ -20,23 +20,31 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-Yj-fkR" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09l-gB-gfn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="09l-gB-gfn">
                                         <rect key="frame" x="75" y="54" width="450" height="299"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levittown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbV-r1-WGX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Levittown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BbV-r1-WGX">
                                         <rect key="frame" x="-17" y="0.0" width="634" height="179"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="150"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31711256768623175" green="0.41634685779419034" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="09l-gB-gfn" firstAttribute="width" secondItem="XrJ-Yj-fkR" secondAttribute="width" id="1be-rw-Kj3"/>
                                     <constraint firstAttribute="centerX" secondItem="BbV-r1-WGX" secondAttribute="centerX" id="8zF-3z-B5N"/>
                                     <constraint firstAttribute="centerX" secondItem="09l-gB-gfn" secondAttribute="centerX" id="Utd-4O-ycQ"/>
+                                    <constraint firstAttribute="width" secondItem="BbV-r1-WGX" secondAttribute="width" id="bxK-xM-4T3"/>
                                     <constraint firstItem="BbV-r1-WGX" firstAttribute="top" secondItem="XrJ-Yj-fkR" secondAttribute="top" id="qhM-UL-PjL"/>
                                     <constraint firstAttribute="bottom" secondItem="09l-gB-gfn" secondAttribute="bottom" constant="10" id="zDD-5b-VDe"/>
                                 </constraints>
