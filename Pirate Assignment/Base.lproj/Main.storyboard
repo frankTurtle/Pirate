@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,59 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-Yj-fkR" userLabel="TextContainer">
+                                <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09l-gB-gfn">
+                                        <rect key="frame" x="75" y="54" width="450" height="299"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levittown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbV-r1-WGX">
+                                        <rect key="frame" x="-17" y="0.0" width="634" height="179"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31711256768623175" green="0.41634685779419034" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="BbV-r1-WGX" secondAttribute="centerX" id="8zF-3z-B5N"/>
+                                    <constraint firstAttribute="centerX" secondItem="09l-gB-gfn" secondAttribute="centerX" id="Utd-4O-ycQ"/>
+                                    <constraint firstItem="BbV-r1-WGX" firstAttribute="top" secondItem="XrJ-Yj-fkR" secondAttribute="top" id="qhM-UL-PjL"/>
+                                    <constraint firstAttribute="bottom" secondItem="09l-gB-gfn" secondAttribute="bottom" constant="10" id="zDD-5b-VDe"/>
+                                </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="600" y="400" width="0.0" height="0.0"/>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-x1-x9L">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="102" width="270" height="197"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4365795690929366" green="0.69551219792953289" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xJ0-x1-x9L" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="07N-Wr-0OT"/>
+                            <constraint firstItem="XrJ-Yj-fkR" firstAttribute="top" secondItem="xJ0-x1-x9L" secondAttribute="bottom" constant="20" id="7LQ-6q-OBt"/>
+                            <constraint firstItem="xJ0-x1-x9L" firstAttribute="height" relation="lessThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.4" id="9de-QS-lmJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XrJ-Yj-fkR" secondAttribute="bottom" id="Dal-KE-0av"/>
+                            <constraint firstItem="XrJ-Yj-fkR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Thg-ES-qd0"/>
+                            <constraint firstAttribute="trailing" secondItem="XrJ-Yj-fkR" secondAttribute="trailing" id="Uf7-xl-8Mc"/>
+                            <constraint firstAttribute="centerX" secondItem="xJ0-x1-x9L" secondAttribute="centerX" id="w27-rn-e5y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-382" y="599"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cloud" width="300" height="197"/>
+    </resources>
 </document>
