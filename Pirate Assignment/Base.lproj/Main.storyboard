@@ -179,22 +179,45 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="290" y="8" width="82" height="30"/>
-                                        </variation>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ga-0i-gNa">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.92758040070000003" green="1" blue="0.38953628839999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="nVu-CB-ylD"/>
+                                        </constraints>
+                                        <state key="normal" title="Action">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nVu-CB-ylD"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="nVu-CB-ylD"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pMm-bq-W5J" secondAttribute="trailing" constant="10" id="7yt-bg-VEI"/>
                                     <constraint firstItem="pMm-bq-W5J" firstAttribute="top" secondItem="Mjg-xH-2Ct" secondAttribute="top" constant="8" id="8sg-uF-xAL"/>
+                                    <constraint firstItem="5ga-0i-gNa" firstAttribute="leading" secondItem="Mjg-xH-2Ct" secondAttribute="leading" constant="42" id="8uc-Vz-mVd"/>
                                     <constraint firstAttribute="bottom" secondItem="pMm-bq-W5J" secondAttribute="bottom" constant="46" id="Hfg-3w-FfJ"/>
+                                    <constraint firstAttribute="centerY" secondItem="5ga-0i-gNa" secondAttribute="centerY" id="aLq-yu-P5z"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="pMm-bq-W5J"/>
+                                        <exclude reference="5ga-0i-gNa"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="8uc-Vz-mVd"/>
+                                        <exclude reference="aLq-yu-P5z"/>
                                         <exclude reference="7yt-bg-VEI"/>
                                         <exclude reference="8sg-uF-xAL"/>
                                         <exclude reference="Hfg-3w-FfJ"/>
@@ -203,8 +226,11 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="pMm-bq-W5J"/>
+                                        <include reference="5ga-0i-gNa"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="8uc-Vz-mVd"/>
+                                        <include reference="aLq-yu-P5z"/>
                                         <include reference="7yt-bg-VEI"/>
                                         <include reference="8sg-uF-xAL"/>
                                         <include reference="Hfg-3w-FfJ"/>
