@@ -84,6 +84,8 @@
 		10B76A6A1B0A80F10034DEBD /* Pirate Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				10D9DA181B0BFB2800373FBA /* Factory */,
+				10D9DA171B0BFB2000373FBA /* Models */,
 				10B76A6F1B0A80F10034DEBD /* AppDelegate.h */,
 				10B76A701B0A80F10034DEBD /* AppDelegate.m */,
 				10B76A721B0A80F10034DEBD /* ViewController.h */,
@@ -122,6 +124,20 @@
 				10B76A861B0A80F10034DEBD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10D9DA171B0BFB2000373FBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		10D9DA181B0BFB2800373FBA /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +438,7 @@
 				10B76A8D1B0A80F10034DEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10B76A8E1B0A80F10034DEBD /* Build configuration list for PBXNativeTarget "Pirate AssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +447,7 @@
 				10B76A901B0A80F10034DEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
