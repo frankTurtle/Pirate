@@ -10,14 +10,14 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic) CGPoint location; //............................. x,y coordinates of the current location
-@property (strong, nonatomic) NSArray *tiles; //....................... array full of Tile objects
-@property (strong, nonatomic) IBOutlet UILabel *healthLabel; //........ the health label
-@property (strong, nonatomic) IBOutlet UILabel *damageLabel; //........ the damage label
-@property (strong, nonatomic) IBOutlet UILabel *weaponLabel; //........ the weapon label
-@property (strong, nonatomic) IBOutlet UILabel *armorLabel; //......... the armor label
-@property (strong, nonatomic) IBOutlet UILabel *storyLabel;
-@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic) CGPoint location; //.............................. x,y coordinates of the current location
+@property (strong, nonatomic) NSArray *tiles; //........................ array full of Tile objects
+@property (strong, nonatomic) IBOutlet UILabel *healthLabel; //......... the health label
+@property (strong, nonatomic) IBOutlet UILabel *damageLabel; //......... the damage label
+@property (strong, nonatomic) IBOutlet UILabel *weaponLabel; //......... the weapon label
+@property (strong, nonatomic) IBOutlet UILabel *armorLabel; //.......... the armor label
+@property (strong, nonatomic) IBOutlet UILabel *storyLabel; //.......... label to put the story
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage; //. background image
 
 @property (strong, nonatomic) NSArray *buttonsArray; //..................... array to hold all the button objects
 @property (strong, nonatomic) IBOutlet UIButton *northButtonObject; //. north button object to fill the array with

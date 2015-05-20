@@ -18,11 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self updateLocation:0 yCoord:0]; //.............................................................. initial location set, also updates button visibility
     self.tiles = [[NSArray alloc] initWithArray:[[[TileFactory alloc] init] tiles] ]; //.............. populates our tiles with a new TileFactory object
     self.buttonsArray = [[NSArray alloc] initWithObjects:
                     self.northButtonObject, self.eastButtonObject,
                     self.southButtonObject, self.westButtonObject, nil]; //........................... populates the button objects into an array
+    [self updateLocation:0 yCoord:0]; //.............................................................. initial location set, also updates button visibility
     
     }
 
