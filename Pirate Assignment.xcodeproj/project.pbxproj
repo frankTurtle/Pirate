@@ -21,6 +21,7 @@
 		10D9DA231B0D230300373FBA /* treasureChest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA221B0D230300373FBA /* treasureChest.jpg */; };
 		10D9DA261B0D242800373FBA /* (null) in Sources */ = {isa = PBXBuildFile; };
 		10D9DA2C1B0D2F6000373FBA /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D9DA2B1B0D2F6000373FBA /* Armor.m */; };
+		10D9DA2F1B0D307200373FBA /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D9DA2E1B0D307200373FBA /* Weapon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		10D9DA221B0D230300373FBA /* treasureChest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = treasureChest.jpg; sourceTree = "<group>"; };
 		10D9DA2A1B0D2F6000373FBA /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Armor.h; sourceTree = "<group>"; };
 		10D9DA2B1B0D2F6000373FBA /* Armor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Armor.m; sourceTree = "<group>"; };
+		10D9DA2D1B0D307200373FBA /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		10D9DA2E1B0D307200373FBA /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				10B76A921B0A84D80034DEBD /* Tile.m */,
 				10D9DA2A1B0D2F6000373FBA /* Armor.h */,
 				10D9DA2B1B0D2F6000373FBA /* Armor.m */,
+				10D9DA2D1B0D307200373FBA /* Weapon.h */,
+				10D9DA2E1B0D307200373FBA /* Weapon.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				10B76A711B0A80F10034DEBD /* AppDelegate.m in Sources */,
 				10B76A6E1B0A80F10034DEBD /* main.m in Sources */,
 				10D9DA261B0D242800373FBA /* (null) in Sources */,
+				10D9DA2F1B0D307200373FBA /* Weapon.m in Sources */,
 				10B76A931B0A84D80034DEBD /* Tile.m in Sources */,
 				10D9DA1B1B0BFC6100373FBA /* TileFactory.m in Sources */,
 			);
