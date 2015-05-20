@@ -17,7 +17,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *weaponLabel; //........ the weapon label
 @property (strong, nonatomic) IBOutlet UILabel *armorLabel; //......... the armor label
 
-@property (strong, nonatomic) NSArray *buttons; //..................... array to hold all the button objects
+@property (strong, nonatomic) NSArray *buttonsArray; //..................... array to hold all the button objects
 @property (strong, nonatomic) IBOutlet UIButton *northButtonObject; //. north button object to fill the array with
 @property (strong, nonatomic) IBOutlet UIButton *eastButtonObject; //.. east button object to fill the array with
 @property (strong, nonatomic) IBOutlet UIButton *southButtonObject; //. south button object to fill the array with
