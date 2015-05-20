@@ -31,6 +31,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Method to update the background image
+// image is pulled from the current Tile object
+-(void)updateBackgroundImage
+{
+    self.backgroundImage.image = self.currentTile.backgroundImage;
+}
+
 // Method to update the story label text
 // text is pulled from the current Tile object story
 -(void)updateStoryText
@@ -84,10 +91,11 @@
 // also updates the story text based on the current Tile
 -(void) updateLocation:(float) xCoord yCoord:(float) yCoord
 {
-    self.location = CGPointMake(xCoord, yCoord);
-    [self updateButtons:self.buttonsArray];
-    [self updateCurrentTile];
-    [self updateStoryText];
+    self.location = CGPointMake(xCoord, yCoord); //..... sets the location
+    [self updateButtons:self.buttonsArray]; //.......... updates visiblity of the buttons
+    [self updateCurrentTile]; //........................ updates correct Tile
+    [self updateStoryText]; //.......................... updates the story
+    [self updateBackgroundImage]; //.................... updates the background
 }
 
 - (IBAction)actionButton:(id)sender {
