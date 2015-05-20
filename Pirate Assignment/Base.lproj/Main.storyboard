@@ -437,8 +437,12 @@
                     <connections>
                         <outlet property="armorLabel" destination="a0o-Rt-aFY" id="xED-hs-3BX"/>
                         <outlet property="damageLabel" destination="jdb-6t-wWE" id="d8I-vX-O2q"/>
+                        <outlet property="eastButtonObject" destination="Nb9-4H-We2" id="BFZ-CS-3r7"/>
                         <outlet property="healthLabel" destination="DR9-Mh-px7" id="o1N-1G-MG9"/>
+                        <outlet property="northButtonObject" destination="EJL-k6-v0o" id="dWe-7M-NdR"/>
+                        <outlet property="southButtonObject" destination="NTc-Vn-IJ7" id="oeH-Tq-INW"/>
                         <outlet property="weaponLabel" destination="XeD-Rh-IGX" id="7Hx-Z0-Wve"/>
+                        <outlet property="westButtonObject" destination="Ojl-aQ-U6V" id="otW-Cj-R0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
