@@ -31,6 +31,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Method to update the story label text
+// text is pulled from the current Tile object story
+-(void)updateStoryText
+{
+    self.storyLabel.text = self.currentTile.story;
+}
+
 // Method to update the Current tile based upon the X, Y coords from the location
 // this will pull from the array of Tile objects 
 -(void)updateCurrentTile
@@ -74,11 +81,13 @@
 // after it updates the location, it will update the visibility
 // of the buttons
 // also updates the current Tile being used
+// also updates the story text based on the current Tile
 -(void) updateLocation:(float) xCoord yCoord:(float) yCoord
 {
     self.location = CGPointMake(xCoord, yCoord);
     [self updateButtons:self.buttonsArray];
     [self updateCurrentTile];
+    [self updateStoryText];
 }
 
 - (IBAction)actionButton:(id)sender {

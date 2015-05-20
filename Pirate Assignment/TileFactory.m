@@ -29,7 +29,7 @@
     tile3.actionButtonName = @"Action";
     tile3.backgroundImage = [UIImage imageNamed:@"piratesBackground.jpg"];
     
-    NSArray *column1Array = [[NSArray alloc] initWithObjects:tile1, tile3, tile3, nil];
+    NSArray *column1Array = [[NSArray alloc] initWithObjects:tile1, tile2, tile3, nil];
     
     Tile *tile4 = [[Tile alloc] init];
     tile4.story = @"Tile 4 story ... woo!";
@@ -63,7 +63,7 @@
     tile9.actionButtonName = @"Action";
     tile9.backgroundImage = [UIImage imageNamed:@"sexyPirates.jpg"];
     
-    NSArray *column3Array = [[NSArray alloc] initWithObjects:tile1, tile3, tile3, nil];
+    NSArray *column3Array = [[NSArray alloc] initWithObjects:tile7, tile8, tile9, nil];
     
     NSArray *returnArray = [[NSArray alloc] initWithObjects:column1Array, column2Array, column3Array, nil];
     
