@@ -13,12 +13,14 @@
 @interface Character : NSObject
 
 // Instance variables
-@property (nonatomic) int health; //............................ holds characters health
+@property (nonatomic) int health; //................ holds characters health
+@property (nonatomic) int damage; //................ holds the characters damage
 @property (strong, nonatomic) Weapon *weapon; //.... holds the characters weapon
 @property (strong, nonatomic) Armor *armor; //...... holds the characters armor
 
 // Methods
 -(void)setHealth:(int)health; //.................... sets the health of the characters
+-(void)setDamage:(int)damage; //.................... sets the damage of the character
 -(void)setWeapon:(Weapon *)weapon; //............... sets the weapon for the character
 -(void)setArmor:(Armor *)armor; //.................. sets the armor for the character
 
