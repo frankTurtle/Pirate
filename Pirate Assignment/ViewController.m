@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TileFactory.h"
+#import "Tile.h"
 
 @interface ViewController ()
 
@@ -23,12 +24,16 @@
                     self.northButtonObject, self.eastButtonObject,
                     self.southButtonObject, self.westButtonObject, nil]; //........................... populates the button objects into an array
     [self updateLocation:0 yCoord:0]; //.............................................................. initial location set, also updates button visibility
-    
     }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)updateCurrentTile
+{
+    self.currentTile = [[self.tiles objectAtIndex:self.location.x] objectAtIndex:self.location.y];
 }
 
 // Method to check if a button should be displayed or not
@@ -66,10 +71,12 @@
 // takes in two float values represengint the X and Y coordinate
 // after it updates the location, it will update the visibility
 // of the buttons
+// also updates the current Tile being used
 -(void) updateLocation:(float) xCoord yCoord:(float) yCoord
 {
     self.location = CGPointMake(xCoord, yCoord);
     [self updateButtons:self.buttonsArray];
+    [self updateCurrentTile];
 }
 
 - (IBAction)actionButton:(id)sender {
