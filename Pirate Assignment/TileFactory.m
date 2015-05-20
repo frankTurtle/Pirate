@@ -34,17 +34,17 @@
     Tile *tile4 = [[Tile alloc] init];
     tile4.story = @"Tile 4 story ... woo!";
     tile4.actionButtonName = @"Action";
-    tile4.backgroundImage = [UIImage imageNamed:@"treasureChest.png"];
+    tile4.backgroundImage = [UIImage imageNamed:@"treasureChest.jpg"];
     
     Tile *tile5 = [[Tile alloc] init];
     tile5.story = @"Tile 5 story ... woo!";
     tile5.actionButtonName = @"Action";
-    tile5.backgroundImage = [UIImage imageNamed:@"treasureChest.png"];
+    tile5.backgroundImage = [UIImage imageNamed:@"treasureChest.jpg"];
     
     Tile *tile6 = [[Tile alloc] init];
     tile6.story = @"Tile 6 story ... woo!";
     tile6.actionButtonName = @"Action";
-    tile6.backgroundImage = [UIImage imageNamed:@"treasureChest.png"];
+    tile6.backgroundImage = [UIImage imageNamed:@"treasureChest.jpg"];
     
     NSArray *column2Array = [[NSArray alloc] initWithObjects:tile4, tile5, tile6, nil];
     

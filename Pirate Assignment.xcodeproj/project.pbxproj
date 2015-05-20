@@ -18,7 +18,7 @@
 		10D9DA1B1B0BFC6100373FBA /* TileFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D9DA1A1B0BFC6100373FBA /* TileFactory.m */; };
 		10D9DA1F1B0BFCBD00373FBA /* piratesBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1C1B0BFCBD00373FBA /* piratesBackground.jpg */; };
 		10D9DA201B0BFCBD00373FBA /* sexyPirates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1D1B0BFCBD00373FBA /* sexyPirates.jpg */; };
-		10D9DA211B0BFCBD00373FBA /* teasureChest.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1E1B0BFCBD00373FBA /* teasureChest.png */; };
+		10D9DA231B0D230300373FBA /* treasureChest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA221B0D230300373FBA /* treasureChest.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		10D9DA1A1B0BFC6100373FBA /* TileFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileFactory.m; sourceTree = "<group>"; };
 		10D9DA1C1B0BFCBD00373FBA /* piratesBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratesBackground.jpg; sourceTree = "<group>"; };
 		10D9DA1D1B0BFCBD00373FBA /* sexyPirates.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sexyPirates.jpg; sourceTree = "<group>"; };
-		10D9DA1E1B0BFCBD00373FBA /* teasureChest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teasureChest.png; sourceTree = "<group>"; };
+		10D9DA221B0D230300373FBA /* treasureChest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = treasureChest.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,9 @@
 				10B76A731B0A80F10034DEBD /* ViewController.m */,
 				10B76A751B0A80F10034DEBD /* Main.storyboard */,
 				10B76A781B0A80F10034DEBD /* Images.xcassets */,
+				10D9DA221B0D230300373FBA /* treasureChest.jpg */,
 				10D9DA1C1B0BFCBD00373FBA /* piratesBackground.jpg */,
 				10D9DA1D1B0BFCBD00373FBA /* sexyPirates.jpg */,
-				10D9DA1E1B0BFCBD00373FBA /* teasureChest.png */,
 				10B76A7A1B0A80F10034DEBD /* LaunchScreen.xib */,
 				10B76A6B1B0A80F10034DEBD /* Supporting Files */,
 			);
@@ -234,8 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D9DA231B0D230300373FBA /* treasureChest.jpg in Resources */,
 				10D9DA1F1B0BFCBD00373FBA /* piratesBackground.jpg in Resources */,
-				10D9DA211B0BFCBD00373FBA /* teasureChest.png in Resources */,
 				10D9DA201B0BFCBD00373FBA /* sexyPirates.jpg in Resources */,
 				10B76A771B0A80F10034DEBD /* Main.storyboard in Resources */,
 				10B76A7C1B0A80F10034DEBD /* LaunchScreen.xib in Resources */,
