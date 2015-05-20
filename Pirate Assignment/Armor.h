@@ -10,4 +10,7 @@
 
 @interface Armor : NSObject
 
+@property int health; //................................ holds the health of the armor
+@property (strong, nonatomic) NSString *armorName; //... holds the name of the armor
+
 @end
