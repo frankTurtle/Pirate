@@ -260,9 +260,20 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ErQ-nk-S2s">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.43657956910000001" green="0.69551219789999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="ErQ-nk-S2s" firstAttribute="leading" secondItem="5ek-55-aRM" secondAttribute="leading" constant="10" id="80X-tB-B1G"/>
+                                    <constraint firstAttribute="bottom" secondItem="ErQ-nk-S2s" secondAttribute="bottom" constant="10" id="Cn7-fn-SbA"/>
+                                    <constraint firstItem="ErQ-nk-S2s" firstAttribute="top" secondItem="fNs-98-S18" secondAttribute="bottom" constant="10" id="OTl-X0-Eza"/>
+                                    <constraint firstItem="ErQ-nk-S2s" firstAttribute="top" secondItem="fNs-98-S18" secondAttribute="bottom" constant="1" id="QyC-8o-kBE"/>
+                                    <constraint firstAttribute="trailing" secondItem="ErQ-nk-S2s" secondAttribute="trailing" constant="10" id="Uo7-DL-Mqu"/>
                                     <constraint firstAttribute="bottom" secondItem="fNs-98-S18" secondAttribute="bottom" constant="100" id="kvs-lo-oPz"/>
                                     <constraint firstAttribute="trailing" secondItem="fNs-98-S18" secondAttribute="trailing" constant="8" id="rX6-vo-II4"/>
                                     <constraint firstItem="fNs-98-S18" firstAttribute="top" secondItem="5ek-55-aRM" secondAttribute="top" constant="8" id="sJf-P4-ebk"/>
@@ -270,8 +281,14 @@
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="fNs-98-S18"/>
+                                        <exclude reference="ErQ-nk-S2s"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="80X-tB-B1G"/>
+                                        <exclude reference="Cn7-fn-SbA"/>
+                                        <exclude reference="OTl-X0-Eza"/>
+                                        <exclude reference="QyC-8o-kBE"/>
+                                        <exclude reference="Uo7-DL-Mqu"/>
                                         <exclude reference="kvs-lo-oPz"/>
                                         <exclude reference="rX6-vo-II4"/>
                                         <exclude reference="sJf-P4-ebk"/>
@@ -280,8 +297,14 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="fNs-98-S18"/>
+                                        <include reference="ErQ-nk-S2s"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="80X-tB-B1G"/>
+                                        <include reference="Cn7-fn-SbA"/>
+                                        <include reference="OTl-X0-Eza"/>
+                                        <include reference="QyC-8o-kBE"/>
+                                        <include reference="Uo7-DL-Mqu"/>
                                         <include reference="kvs-lo-oPz"/>
                                         <include reference="rX6-vo-II4"/>
                                         <include reference="sJf-P4-ebk"/>
@@ -436,11 +459,13 @@
                     </view>
                     <connections>
                         <outlet property="armorLabel" destination="a0o-Rt-aFY" id="xED-hs-3BX"/>
+                        <outlet property="backgroundImage" destination="WWD-jr-n2b" id="dIb-Hv-ydU"/>
                         <outlet property="damageLabel" destination="jdb-6t-wWE" id="d8I-vX-O2q"/>
                         <outlet property="eastButtonObject" destination="Nb9-4H-We2" id="BFZ-CS-3r7"/>
                         <outlet property="healthLabel" destination="DR9-Mh-px7" id="o1N-1G-MG9"/>
                         <outlet property="northButtonObject" destination="EJL-k6-v0o" id="dWe-7M-NdR"/>
                         <outlet property="southButtonObject" destination="NTc-Vn-IJ7" id="oeH-Tq-INW"/>
+                        <outlet property="storyLabel" destination="ErQ-nk-S2s" id="7XN-bE-yxG"/>
                         <outlet property="weaponLabel" destination="XeD-Rh-IGX" id="7Hx-Z0-Wve"/>
                         <outlet property="westButtonObject" destination="Ojl-aQ-U6V" id="otW-Cj-R0C"/>
                     </connections>
