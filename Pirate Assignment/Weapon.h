@@ -10,4 +10,7 @@
 
 @interface Weapon : NSObject
 
+@property int damage; //................................. holds the weapons damage
+@property (strong, nonatomic) NSString *weaponName; //... holds the weapons name
+
 @end
