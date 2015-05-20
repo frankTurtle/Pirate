@@ -15,6 +15,10 @@
 		10B76A7C1B0A80F10034DEBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B76A7A1B0A80F10034DEBD /* LaunchScreen.xib */; };
 		10B76A881B0A80F10034DEBD /* Pirate_AssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B76A871B0A80F10034DEBD /* Pirate_AssignmentTests.m */; };
 		10B76A931B0A84D80034DEBD /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B76A921B0A84D80034DEBD /* Tile.m */; };
+		10D9DA1B1B0BFC6100373FBA /* TileFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D9DA1A1B0BFC6100373FBA /* TileFactory.m */; };
+		10D9DA1F1B0BFCBD00373FBA /* piratesBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1C1B0BFCBD00373FBA /* piratesBackground.jpg */; };
+		10D9DA201B0BFCBD00373FBA /* sexyPirates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1D1B0BFCBD00373FBA /* sexyPirates.jpg */; };
+		10D9DA211B0BFCBD00373FBA /* teasureChest.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1E1B0BFCBD00373FBA /* teasureChest.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,11 @@
 		10B76A871B0A80F10034DEBD /* Pirate_AssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pirate_AssignmentTests.m; sourceTree = "<group>"; };
 		10B76A911B0A84D80034DEBD /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		10B76A921B0A84D80034DEBD /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		10D9DA191B0BFC6100373FBA /* TileFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileFactory.h; sourceTree = "<group>"; };
+		10D9DA1A1B0BFC6100373FBA /* TileFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileFactory.m; sourceTree = "<group>"; };
+		10D9DA1C1B0BFCBD00373FBA /* piratesBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratesBackground.jpg; sourceTree = "<group>"; };
+		10D9DA1D1B0BFCBD00373FBA /* sexyPirates.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sexyPirates.jpg; sourceTree = "<group>"; };
+		10D9DA1E1B0BFCBD00373FBA /* teasureChest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teasureChest.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +100,10 @@
 				10B76A721B0A80F10034DEBD /* ViewController.h */,
 				10B76A731B0A80F10034DEBD /* ViewController.m */,
 				10B76A751B0A80F10034DEBD /* Main.storyboard */,
-				10B76A911B0A84D80034DEBD /* Tile.h */,
-				10B76A921B0A84D80034DEBD /* Tile.m */,
 				10B76A781B0A80F10034DEBD /* Images.xcassets */,
+				10D9DA1C1B0BFCBD00373FBA /* piratesBackground.jpg */,
+				10D9DA1D1B0BFCBD00373FBA /* sexyPirates.jpg */,
+				10D9DA1E1B0BFCBD00373FBA /* teasureChest.png */,
 				10B76A7A1B0A80F10034DEBD /* LaunchScreen.xib */,
 				10B76A6B1B0A80F10034DEBD /* Supporting Files */,
 			);
@@ -129,6 +139,8 @@
 		10D9DA171B0BFB2000373FBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10B76A911B0A84D80034DEBD /* Tile.h */,
+				10B76A921B0A84D80034DEBD /* Tile.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -136,6 +148,8 @@
 		10D9DA181B0BFB2800373FBA /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				10D9DA191B0BFC6100373FBA /* TileFactory.h */,
+				10D9DA1A1B0BFC6100373FBA /* TileFactory.m */,
 			);
 			name = Factory;
 			sourceTree = "<group>";
@@ -220,6 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D9DA1F1B0BFCBD00373FBA /* piratesBackground.jpg in Resources */,
+				10D9DA211B0BFCBD00373FBA /* teasureChest.png in Resources */,
+				10D9DA201B0BFCBD00373FBA /* sexyPirates.jpg in Resources */,
 				10B76A771B0A80F10034DEBD /* Main.storyboard in Resources */,
 				10B76A7C1B0A80F10034DEBD /* LaunchScreen.xib in Resources */,
 				10B76A791B0A80F10034DEBD /* Images.xcassets in Resources */,
@@ -244,6 +261,7 @@
 				10B76A711B0A80F10034DEBD /* AppDelegate.m in Sources */,
 				10B76A6E1B0A80F10034DEBD /* main.m in Sources */,
 				10B76A931B0A84D80034DEBD /* Tile.m in Sources */,
+				10D9DA1B1B0BFC6100373FBA /* TileFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
