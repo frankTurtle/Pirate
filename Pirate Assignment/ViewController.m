@@ -31,6 +31,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Method to update the Current tile based upon the X, Y coords from the location
+// this will pull from the array of Tile objects 
 -(void)updateCurrentTile
 {
     self.currentTile = [[self.tiles objectAtIndex:self.location.x] objectAtIndex:self.location.y];
