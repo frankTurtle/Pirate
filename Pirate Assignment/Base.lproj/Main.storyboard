@@ -378,10 +378,14 @@
                                 <exclude reference="Ojl-aQ-U6V"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Hng-Vb-sM8"/>
-                                <exclude reference="WXO-JI-gwu"/>
-                                <exclude reference="m9V-jy-c3d"/>
-                                <exclude reference="pVM-Mo-y58"/>
+                                <exclude reference="Xob-Ic-eWb"/>
+                                <exclude reference="jtw-VH-OMA"/>
+                                <exclude reference="GDP-qW-cyn"/>
+                                <exclude reference="LCS-Go-w8J"/>
+                                <exclude reference="C5T-XC-0Ty"/>
+                                <exclude reference="PUc-bx-pEU"/>
+                                <exclude reference="cES-gC-t3F"/>
+                                <exclude reference="aip-ag-e6B"/>
                                 <exclude reference="9a1-N2-pkE"/>
                                 <exclude reference="Xc0-Tn-L44"/>
                                 <exclude reference="1qX-0q-hvg"/>
@@ -390,14 +394,10 @@
                                 <exclude reference="QCR-B0-Dzs"/>
                                 <exclude reference="wY9-qy-jHE"/>
                                 <exclude reference="xfO-td-2q7"/>
-                                <exclude reference="Xob-Ic-eWb"/>
-                                <exclude reference="jtw-VH-OMA"/>
-                                <exclude reference="aip-ag-e6B"/>
-                                <exclude reference="C5T-XC-0Ty"/>
-                                <exclude reference="PUc-bx-pEU"/>
-                                <exclude reference="cES-gC-t3F"/>
-                                <exclude reference="GDP-qW-cyn"/>
-                                <exclude reference="LCS-Go-w8J"/>
+                                <exclude reference="Hng-Vb-sM8"/>
+                                <exclude reference="WXO-JI-gwu"/>
+                                <exclude reference="m9V-jy-c3d"/>
+                                <exclude reference="pVM-Mo-y58"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -411,10 +411,14 @@
                                 <include reference="Ojl-aQ-U6V"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Hng-Vb-sM8"/>
-                                <include reference="WXO-JI-gwu"/>
-                                <include reference="m9V-jy-c3d"/>
-                                <include reference="pVM-Mo-y58"/>
+                                <include reference="Xob-Ic-eWb"/>
+                                <include reference="jtw-VH-OMA"/>
+                                <include reference="GDP-qW-cyn"/>
+                                <include reference="LCS-Go-w8J"/>
+                                <include reference="C5T-XC-0Ty"/>
+                                <include reference="PUc-bx-pEU"/>
+                                <include reference="cES-gC-t3F"/>
+                                <include reference="aip-ag-e6B"/>
                                 <include reference="9a1-N2-pkE"/>
                                 <include reference="Xc0-Tn-L44"/>
                                 <include reference="1qX-0q-hvg"/>
@@ -423,14 +427,10 @@
                                 <include reference="QCR-B0-Dzs"/>
                                 <include reference="wY9-qy-jHE"/>
                                 <include reference="xfO-td-2q7"/>
-                                <include reference="Xob-Ic-eWb"/>
-                                <include reference="jtw-VH-OMA"/>
-                                <include reference="aip-ag-e6B"/>
-                                <include reference="C5T-XC-0Ty"/>
-                                <include reference="PUc-bx-pEU"/>
-                                <include reference="cES-gC-t3F"/>
-                                <include reference="GDP-qW-cyn"/>
-                                <include reference="LCS-Go-w8J"/>
+                                <include reference="Hng-Vb-sM8"/>
+                                <include reference="WXO-JI-gwu"/>
+                                <include reference="m9V-jy-c3d"/>
+                                <include reference="pVM-Mo-y58"/>
                             </mask>
                         </variation>
                     </view>

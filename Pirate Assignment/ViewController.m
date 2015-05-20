@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.location = CGPointMake(0,0); //............................................................. initial location set
+    [self updateLocation:0 yCoord:0]; //.............................................................. initial location set
     self.tiles = [[NSArray alloc] initWithArray:[[[TileFactory alloc] init] tiles] ]; //.............. populates our tiles with a new TileFactory object
     self.buttonsArray = [[NSArray alloc] initWithObjects:
                     self.northButtonObject, self.eastButtonObject,
@@ -39,7 +39,6 @@
 // East:  when the X coordinate is 3
 // South: when the Y coordinate is 0
 // West:  when the X coordinate is 0
-
 -(BOOL) isButtonHidden:(UIButton *) inButton currentLocation:(CGPoint) location
 {
     
@@ -55,13 +54,24 @@
     if (location.x == 0 && [inButton.titleLabel.text isEqual: @"West"]) //....... hides the West button when X coordinate is 0
         return YES;
     
-    return NO;
+    return NO; //................................................................ if none are true, the button doesnt need to hide
 }
 
+// Method to update the visibility of the buttons on the screen
 -(void) updateButtons:(NSArray *) inButtonsArray
 {
-    for (UIButton *btn in inButtonsArray) //............................................................ loops through each button in the array
-        btn.hidden = [self isButtonHidden:btn currentLocation:self.location]; //........................ checks to see if the button is active and hides if not
+    for (UIButton *btn in inButtonsArray) //.................................................. loops through each button in the array
+        btn.hidden = [self isButtonHidden:btn currentLocation:self.location]; //.............. checks to see if the button is active and hides if not
+}
+
+// Method to update the CGPoint's X and Y coordinates
+// takes in two float values represengint the X and Y coordinate
+// after it updates the location, it will update the visibility
+// of the buttons
+-(void) updateLocation:(float) xCoord yCoord:(float) yCoord
+{
+    self.location = CGPointMake(xCoord, yCoord);
+    [self updateButtons:self.buttonsArray];
 }
 
 - (IBAction)actionButton:(id)sender {
@@ -70,21 +80,31 @@
 - (IBAction)resetGameButton:(id)sender {
 }
 
+// Method that adjust coordinates when the user clicks the North button
+// increments the Y coordinate by 1
 - (IBAction)northButton:(id)sender
 {
-    if (self.location.y < 2)
-    {
-        self.location = CGPointMake(self.location.x, (self.location.y+1) );
-        [self updateButtons:self.buttonsArray];
-    }
+    [self updateLocation:self.location.x yCoord:(self.location.y + 1)];
 }
 
-- (IBAction)eastButton:(id)sender {
+// Method that adjust coordinates when the user clicks the East button
+// increments the X coordinate by 1
+- (IBAction)eastButton:(id)sender
+{
+    [self updateLocation:(self.location.x + 1) yCoord:self.location.y];
 }
 
-- (IBAction)southButton:(id)sender {
+// Method that adjust coordinates when the user clicks the South button
+// decrements the Y coordinate by 1
+- (IBAction)southButton:(id)sender
+{
+    [self updateLocation:self.location.x yCoord:(self.location.y - 1)];
 }
 
-- (IBAction)westButton:(id)sender {
+// Method that adjust coordinates when the user clicks the West button
+// decrements the X coordinate by 1
+- (IBAction)westButton:(id)sender
+{
+    [self updateLocation:(self.location.x - 1) yCoord:self.location.y];
 }
 @end
