@@ -13,7 +13,7 @@
 @interface Character : NSObject
 
 // Instance variables
-@property int health; //............................ holds characters health
+@property (nonatomic) int health; //............................ holds characters health
 @property (strong, nonatomic) Weapon *weapon; //.... holds the characters weapon
 @property (strong, nonatomic) Armor *armor; //...... holds the characters armor
 
