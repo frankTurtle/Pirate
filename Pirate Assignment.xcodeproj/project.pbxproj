@@ -19,6 +19,7 @@
 		10D9DA1F1B0BFCBD00373FBA /* piratesBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1C1B0BFCBD00373FBA /* piratesBackground.jpg */; };
 		10D9DA201B0BFCBD00373FBA /* sexyPirates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA1D1B0BFCBD00373FBA /* sexyPirates.jpg */; };
 		10D9DA231B0D230300373FBA /* treasureChest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D9DA221B0D230300373FBA /* treasureChest.jpg */; };
+		10D9DA261B0D242800373FBA /* Weapons.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D9DA251B0D242800373FBA /* Weapons.m */; };
 		10D9DA291B0D254400373FBA /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D9DA281B0D254400373FBA /* Armor.m */; };
 /* End PBXBuildFile section */
 
@@ -144,8 +145,8 @@
 			children = (
 				10B76A911B0A84D80034DEBD /* Tile.h */,
 				10B76A921B0A84D80034DEBD /* Tile.m */,
-				10D9DA271B0D254400373FBA /* Armor.h */,
-				10D9DA281B0D254400373FBA /* Armor.m */,
+				10D9DA241B0D242800373FBA /* Weapons.h */,
+				10D9DA251B0D242800373FBA /* Weapons.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -265,7 +266,7 @@
 				10B76A741B0A80F10034DEBD /* ViewController.m in Sources */,
 				10B76A711B0A80F10034DEBD /* AppDelegate.m in Sources */,
 				10B76A6E1B0A80F10034DEBD /* main.m in Sources */,
-				10D9DA291B0D254400373FBA /* Armor.m in Sources */,
+				10D9DA261B0D242800373FBA /* Weapons.m in Sources */,
 				10B76A931B0A84D80034DEBD /* Tile.m in Sources */,
 				10D9DA1B1B0BFC6100373FBA /* TileFactory.m in Sources */,
 			);
