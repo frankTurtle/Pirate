@@ -34,6 +34,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Helper Methods
+
 // Method to set the actionButton text
 // data is pulled from the current tile object
 -(void)updateActionButtonText
@@ -120,6 +122,8 @@
     [self updateCharacterStats]; //..................... updates the health status label
     [self updateActionButtonText]; //................... updates the text of the action button
 }
+
+#pragma mark - IBActions
 
 // Method that handles when the action button is pressed
 // it updates the character object's damage / armor / health depending on whats on the current tile
