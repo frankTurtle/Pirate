@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "TileFactory.h"
-//#import "Tile.h"
 #import "CharacterFactory.h"
 
 @interface ViewController ()
@@ -33,10 +32,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Method that sets the health label
+// also sets the damage, weapon, and armor labels
+// data is pulled from the character object
 -(void)updateCharacterStats
 {
-    [self.healthLabel setText:[NSString stringWithFormat:@"%i", self.character.health] ];
-    
+    [ _healthLabel setText:[NSString stringWithFormat:@"%i", _character.health] ]; //............. sets the health label
+    [ _damageLabel setText:[NSString stringWithFormat:@"%i", _character.damage] ]; //............. sets the damage labeel
+    [ _weaponLabel setText:[NSString stringWithFormat:@"%@", _character.weapon.weaponName] ]; //.. sets the weapon label
+    [ _armorLabel  setText:[NSString stringWithFormat:@"%@", _character.armor.armorName  ] ]; //.. sets the armor label
 }
 
 // Method to update the background image
