@@ -13,27 +13,27 @@
 @implementation Character
 
 // Method to set the health of the character
--(void)setHealth:(int)health
+-(void)setHealth:(int)inHealth
 {
-    self.health = health;
+    _health = inHealth;
 }
 
 // Method to set the damage of the character
--(void)setDamage:(int)damage
+-(void)setDamage:(int)inDamage
 {
-    self.damage = damage;
+    _damage = inDamage;
 }
 
 // Method to set the weapon of the characer
 -(void)setWeapon:(Weapon *)weapon
 {
-    self.weapon = weapon;
+    _weapon = weapon;
 }
 
 // Method to set teh armor of the character
 -(void)setArmor:(Armor *)armor
 {
-    self.armor = armor;
+    _armor = armor;
 }
 
 @end

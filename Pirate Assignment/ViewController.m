@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "TileFactory.h"
-#import "Tile.h"
+//#import "Tile.h"
+#import "CharacterFactory.h"
 
 @interface ViewController ()
 
@@ -19,16 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tiles = [[NSArray alloc] initWithArray:[[[TileFactory alloc] init] tiles] ]; //.............. populates our tiles with a new TileFactory object
+    self.tiles = [[NSArray alloc] initWithArray:[[[TileFactory alloc] init] tiles] ]; //.............. populates our tiles with a new TileFactory array of Tiles
     self.buttonsArray = [[NSArray alloc] initWithObjects:
                     self.northButtonObject, self.eastButtonObject,
                     self.southButtonObject, self.westButtonObject, nil]; //........................... populates the button objects into an array
+    self.character = [[[CharacterFactory alloc] init] createCharacter]; //............................ creates a character
     [self updateLocation:0 yCoord:0]; //.............................................................. initial location set, also updates button visibility
     }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)updateCharacterStats
+{
+    [self.healthLabel setText:[NSString stringWithFormat:@"%i", self.character.health] ];
+    
 }
 
 // Method to update the background image
@@ -64,7 +72,7 @@
     if (location.y == 2 && [inButton.titleLabel.text isEqual: @"North"]) //...... hides the North button when Y coordinate is 2
         return YES;
     
-    if (location.x == 3 && [inButton.titleLabel.text isEqual: @"East"]) //....... hides the East button when X coordinate is 3
+    if (location.x == 2 && [inButton.titleLabel.text isEqual: @"East"]) //....... hides the East button when X coordinate is 3
         return YES;
     
     if (location.y == 0 && [inButton.titleLabel.text isEqual: @"South"]) //...... hides the South button when Y coordinate is 0
@@ -96,6 +104,7 @@
     [self updateCurrentTile]; //........................ updates correct Tile
     [self updateStoryText]; //.......................... updates the story
     [self updateBackgroundImage]; //.................... updates the background
+    [self updateCharacterStats]; //..................... updates the health status label
 }
 
 - (IBAction)actionButton:(id)sender {

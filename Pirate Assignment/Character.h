@@ -19,8 +19,8 @@
 @property (strong, nonatomic) Armor *armor; //...... holds the characters armor
 
 // Methods
--(void)setHealth:(int)health; //.................... sets the health of the characters
--(void)setDamage:(int)damage; //.................... sets the damage of the character
+-(void)setHealth:(int)inHealth; //.................... sets the health of the characters
+-(void)setDamage:(int)inDamage; //.................... sets the damage of the character
 -(void)setWeapon:(Weapon *)weapon; //............... sets the weapon for the character
 -(void)setArmor:(Armor *)armor; //.................. sets the armor for the character
 
