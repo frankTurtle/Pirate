@@ -23,12 +23,12 @@
     [weapon setDamage:1]; //.................................... sets the weapon damage to 1
     [weapon setWeaponName:@"Fist"]; //.......................... names the weapon to fist
     
-    [character setHealth:10]; //............................... sets initial healh to 10
-    [character setArmor: armor]; //............................ sets the initial armor to the one created above
-    [character setWeapon:weapon]; //........................... sets teh weapon to the one created above
-    [character setDamage: (1 + weapon.damage) ]; //............ sets the person's dmg to 1 + weapon dmg
+    [character setHealth:10]; //................................ sets initial healh to 10
+    [character setArmor: armor]; //............................. sets the initial armor to the one created above
+    [character setWeapon:weapon]; //............................ sets teh weapon to the one created above
+    [character setDamage: (1 + weapon.damage) ]; //............. sets the person's dmg to 1 + weapon dmg
     
-    return character; //....................................... returns the character object
+    return character; //........................................ returns the character object
 }
 
 @end

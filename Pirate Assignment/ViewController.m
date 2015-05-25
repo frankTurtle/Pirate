@@ -25,7 +25,7 @@
                     self.southButtonObject, self.westButtonObject, nil]; //........................... populates the button objects into an array
     self.character = [[[CharacterFactory alloc] init] createCharacter]; //............................ creates a character
     [self updateLocation:0 yCoord:0]; //.............................................................. initial location set, also updates button visibility
-    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -67,7 +67,7 @@
 // Method to check if a button should be displayed or not
 // Hidden using the following criteria
 // North: when the Y coordinate is 2
-// East:  when the X coordinate is 3
+// East:  when the X coordinate is 2
 // South: when the Y coordinate is 0
 // West:  when the X coordinate is 0
 -(BOOL) isButtonHidden:(UIButton *) inButton currentLocation:(CGPoint) location
