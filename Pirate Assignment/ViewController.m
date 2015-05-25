@@ -119,7 +119,23 @@
     [self updateActionButtonText]; //................... updates the text of the action button
 }
 
-- (IBAction)actionButton:(id)sender {
+// Method that handles when the action button is pressed
+// it updates the character object's damage / armor / health depending on whats on the current tile
+- (IBAction)actionButton:(id)sender
+{
+    if (_currentTile.armor != nil) //....................................................................... if there is armor on the current tile
+    {
+        _character.health = _character.health - _character.armor.health + _currentTile.armor.health; //..... update the character's health
+        _character.armor = _currentTile.armor; //........................................................... put the armor on the character
+    }
+    
+    if (_currentTile.weapon != nil) //...................................................................... if there is a weaon on the current tile
+    {
+        _character.damage = _character.damage - _character.weapon.damage + _currentTile.weapon.damage; //... update the character damage
+        _character.weapon = _currentTile.weapon; //......................................................... put the weapon on the character
+    }
+    
+    [self updateCharacterStats]; //......................................................................... update all character stat labels
 }
 
 - (IBAction)resetGameButton:(id)sender {
