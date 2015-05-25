@@ -168,4 +168,5 @@
 {
     [self updateLocation:(self.location.x - 1) yCoord:self.location.y];
 }
+
 @end

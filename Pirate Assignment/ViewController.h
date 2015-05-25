@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Tile.h"
 #import "Character.h"
+#import "Boss.h"
 
 @interface ViewController : UIViewController
 
@@ -17,6 +18,7 @@
 @property (strong, nonatomic) NSArray *tiles; //........................ array full of Tile objects
 @property (strong, nonatomic) Tile *currentTile; //..................... current Tile object
 @property (strong, nonatomic) Character *character; //.................. holds the Character
+@property (strong, nonatomic) Boss *killaBoss; //....................... holds the Boss!!!! AAAHHHHHHHHH
 
 // IBOutlets
 @property (strong, nonatomic) IBOutlet UILabel *healthLabel; //......... the health label
