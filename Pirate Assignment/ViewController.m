@@ -32,6 +32,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Method to set the actionButton text
+// data is pulled from the current tile object
+-(void)updateActionButtonText
+{
+    [ _actionButtonLabel setTitle:[NSString stringWithFormat:@"%@", _currentTile.actionButtonName] forState:UIControlStateNormal];
+}
+
 // Method that sets the health label
 // also sets the damage, weapon, and armor labels
 // data is pulled from the character object
@@ -109,6 +116,7 @@
     [self updateStoryText]; //.......................... updates the story
     [self updateBackgroundImage]; //.................... updates the background
     [self updateCharacterStats]; //..................... updates the health status label
+    [self updateActionButtonText]; //................... updates the text of the action button
 }
 
 - (IBAction)actionButton:(id)sender {

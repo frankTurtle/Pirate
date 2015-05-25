@@ -449,6 +449,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="actionButtonLabel" destination="5ga-0i-gNa" id="MaM-Ud-MTD"/>
                         <outlet property="armorLabel" destination="a0o-Rt-aFY" id="xED-hs-3BX"/>
                         <outlet property="backgroundImage" destination="WWD-jr-n2b" id="dIb-Hv-ydU"/>
                         <outlet property="damageLabel" destination="jdb-6t-wWE" id="d8I-vX-O2q"/>

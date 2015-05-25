@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *armorLabel; //.......... the armor label
 @property (strong, nonatomic) IBOutlet UILabel *storyLabel; //.......... label to put the story
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImage; //. background image
+@property (strong, nonatomic) IBOutlet UIButton *actionButtonLabel; //.. actionButton outlet to update the text
 
 @property (strong, nonatomic) NSArray *buttonsArray; //................ array to hold all the button objects
 @property (strong, nonatomic) IBOutlet UIButton *northButtonObject; //. north button object to fill the array with
