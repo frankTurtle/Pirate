@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TileFactory.h"
 #import "CharacterFactory.h"
+#import "BossFactory.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,7 @@
                     self.northButtonObject, self.eastButtonObject,
                     self.southButtonObject, self.westButtonObject, nil]; //........................... populates the button objects into an array
     self.character = [[[CharacterFactory alloc] init] createCharacter]; //............................ creates a character
+    self.killaBoss = [[[BossFactory alloc] init] createBossMan]; //................................... creates a boss
     [self updateLocation:0 yCoord:0]; //.............................................................. initial location set, also updates button visibility
 }
 
