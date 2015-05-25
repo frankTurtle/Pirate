@@ -137,10 +137,27 @@
         _character.weapon = _currentTile.weapon; //......................................................... put the weapon on the character
     }
     
+    if (_currentTile.boss != nil) //........................................................................ if there is a boss on this tile
+    {
+        if ( (_character.health - _killaBoss.damage) < 0 ) //............................................... if the next time he hits you falls below 0
+        {
+            _character.health = 0; //....................................................................... set the health to 0
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"DEATH!"
+                                                      message:@"You died homie"
+                                                      delegate:nil cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil]; // ........................... create an alert for the user
+            [alert show]; //................................................................................ show them the alert
+        }
+        else //............................................................................................. if you'll survive his next hit
+            _character.health = _character.health - _killaBoss.damage; //................................... just update the character health
+    }
+    
     [self updateCharacterStats]; //......................................................................... update all character stat labels
 }
 
-- (IBAction)resetGameButton:(id)sender {
+- (IBAction)resetGameButton:(id)sender
+{
+    [self updateLocation:0 yCoord:0];
 }
 
 // Method that adjust coordinates when the user clicks the North button

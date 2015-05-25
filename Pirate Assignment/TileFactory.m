@@ -73,9 +73,10 @@
     tile8.backgroundImage = [UIImage imageNamed:@"sexyPirates.jpg"]; //.................... background image for tile 8
     
     Tile *tile9 = [[Tile alloc] init]; //.................................................. create tile 9
-    tile9.story = @"Tile 9 story ... woo!"; //............................................. story for tile 9
-    tile9.actionButtonName = @"No Action"; //.............................................. tile 9 button text
+    tile9.story = @"BOSS MAN ...... FIGHT"; //............................................. story for tile 9
+    tile9.actionButtonName = @"ATTACK"; //................................................. tile 9 button text
     tile9.backgroundImage = [UIImage imageNamed:@"sexyPirates.jpg"]; //.................... background image for tile 9
+    tile9.boss = [self bigB];
     
     NSArray *column3Array = [[NSArray alloc] initWithObjects:tile7, tile8, tile9, nil]; //. third column array holding tiles 7,8,9
     
@@ -106,6 +107,13 @@
     rtnArmor.health = armorHealthIs; //....................................... sets the health effect
     
     return rtnArmor; //....................................................... returns the armor object
+}
+
+// Method to create and return a boss
+-(Boss *) bigB
+{
+    Boss *bigB = [[Boss alloc] init];
+    return bigB;
 }
 
 @end

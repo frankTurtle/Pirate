@@ -17,7 +17,7 @@
 {
     Boss *bigBoss = [[Boss alloc] init]; //..... create boss object
     bigBoss.health = 50; //..................... give it health
-    bigBoss.damage = 15; //..................... give it damage
+    bigBoss.damage = 4; //..................... give it damage
     
     return bigBoss; //.......................... return object
 }
