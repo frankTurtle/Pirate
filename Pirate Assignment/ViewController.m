@@ -155,9 +155,11 @@
     [self updateCharacterStats]; //......................................................................... update all character stat labels
 }
 
+// Method to reset the character and bring everything back to initial view
 - (IBAction)resetGameButton:(id)sender
 {
-    [self updateLocation:0 yCoord:0];
+    _character = nil; //................. reset the character
+    [self viewDidLoad]; //............... reload the view
 }
 
 // Method that adjust coordinates when the user clicks the North button
